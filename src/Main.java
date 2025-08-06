@@ -1,3 +1,5 @@
+import controllers.ProductoController;
+import models.Producto;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +37,9 @@ public class Main {
                 new Producto("Ventilador USB", "030", Arrays.asList(8.0, 10.0, 8.0, 12.0, 10.0))
 
         );
+
+        ProductoController pC = new ProductoController();
+        Producto p = new Producto(null, null, null);
 
     }
 }

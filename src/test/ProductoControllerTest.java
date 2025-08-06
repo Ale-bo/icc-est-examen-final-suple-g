@@ -57,7 +57,7 @@ public class ProductoControllerTest {
     @Test
     public void testGetCantidadPreciosRepetidos() {
         Producto p = new Producto("Monitor LG", "M001", Arrays.asList(100.0, 105.0, 100.0, 110.0));
-        int repetidos = p.getCatidadPreciosRepetidos(); // 2 veces 100.0 => 1 repetido
+        int repetidos = p.getCantidadPreciosRepetidos(); // 2 veces 100.0 => 1 repetido
         assertEquals(1, repetidos, "La cantidad de precios repetidos debería ser 1");
     }
 
